@@ -1,0 +1,17 @@
+.div{
+    display: flex;
+}
+h1{
+    color: rgb(16, 165, 165);
+}
+h2{
+    color: rgb(13, 183, 127);
+}
+button{
+    margin: 12px;
+    border-radius: 8px;
+    border-color: aquamarine;
+    background-color: aquamarine;
+    box-shadow: 0, 0, 0, 0.5 rebeccapurple;
+    text-shadow: 120px orange;
+}

@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: #f7f7f7;
+  }
+  
+  .First_Class {
+    width: 320px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .First_Class h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* General grid for 4 buttons in a row */
+    gap: 15px;
+  }
+  
+  .span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Hover and Active States */
+  .span:hover {
+    background-color: #eaeaea;
+    transform: scale(1.1); 
+  }
+  
+  .span:active {
+    background-color: #d4d4d4;
+  }
+  
+  /* Custom row for "0" and "/" buttons */
+  .button:nth-child(4) {
+    grid-template-columns: repeat(3, 1fr); /* Apply to 3-column grid for "0" and "/" buttons */
+  }
+  
+  /* "0" Button */
+  .span:nth-child(10) {
+    grid-column: span 1; /* Spans 2 columns for the "0" button */
+  }
+  
+  /* "/" Button */
+  .span:nth-child(13) {
+    grid-column: span 2; /* Keeps "/" button in its own space */
+  }
+  .First_Class input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
